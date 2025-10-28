@@ -6,6 +6,7 @@
   - non-relational: noSQL
 
 Tables, rows, columns
+
 **TABLES** store the information
 **COLUMNS** define what piece of information is going to be contained
 **ROWS** represent each record of a table
