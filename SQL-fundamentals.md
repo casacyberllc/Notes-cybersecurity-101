@@ -24,12 +24,12 @@ Databases are controlled using a DBMS (Database Management System) like MangoDB,
 DBMS serve as an interface between a database and an end user
 SQL is what you use to interact with a relational database
 
-CREATE DATABASE - creates a new database
-SHOW DATABASES - returns a list of all created databases
-USE databasenamee - allows you to interact with a database you know to exist
-DROP databasename - allows you to delete a database you no longer want to exist
+- CREATE DATABASE - creates a new database
+- SHOW DATABASES - returns a list of all created databases
+- USE databasenamee - allows you to interact with a database you know to exist
+- DROP databasename - allows you to delete a database you no longer want to exist
 
-CREATE TABLE - allows you to create a table in a database. You need to add the different columns in order to create the entire table. 
+- CREATE TABLE - allows you to create a table in a database. You need to add the different columns in order to create the entire table. 
 ```
 CREATE TABLE shoes (
     shoe_id INT AUTO_INCREMENT PRIMARY KEY,
