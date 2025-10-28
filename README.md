@@ -19,3 +19,4 @@ https://securityheaders.com/
 
 **Referrer Policy**
   - Controls the amount of information sent to the destination web server when a user is redirected from the source web server, such as when they click a hyperlink. The header is available to allow a web administrator to control what information is shared.
+
