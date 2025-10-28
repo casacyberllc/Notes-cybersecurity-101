@@ -37,7 +37,19 @@ CREATE TABLE shoes (
     release_date DATE
   )
 ```
-  
+
+- SHOW TABLES will show you the tables in a database
+- DESCRIBE tablename will show you what columns are within a table. It returns a detailed view of a table. 
+- ALTER TABLE tablename allows you to alter a table if you want to make changes.
+- DROP tablename allows you to remove a table from a database
+
+CRUD (Create Read Update Delete)
+
+INSERT INTO tablename - creates a new row into a table
+```
+INSERT INTO shoes (id, color, releasedate)
+  VALUES(1, "blue", "2024-10-20");
+```
 
 
 
