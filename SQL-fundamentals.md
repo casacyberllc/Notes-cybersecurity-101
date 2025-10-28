@@ -50,7 +50,11 @@ INSERT INTO tablename - creates a new row into a table
 INSERT INTO shoes (id, color, releasedate)
   VALUES(1, "blue", "2024-10-20");
 ```
-
+SELECT operation allows you to read an item
+`SELECT * FROM shoes`
+UPDATE operation allows you to update an item
+DELETE operation deletes an item from the table
+`DELETE FROM shoes WHERE id = 2`
 
 
 
