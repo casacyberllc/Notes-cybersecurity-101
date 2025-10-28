@@ -17,3 +17,5 @@ https://securityheaders.com/
 **X Content Type Options**
   - The X-Content-Type-Options header can be used to instruct browsers not to guess the MIME time of a resource but only use the Content-Type header
 
+**Referrer Policy**
+  - Controls the amount of information sent to the destination web server when a user is redirected from the source web server, such as when they click a hyperlink. The header is available to allow a web administrator to control what information is shared.
