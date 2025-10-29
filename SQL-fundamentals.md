@@ -150,9 +150,43 @@ example: `SELECT shoe, COUNT(*) FROM shoes GROUP BY shoe HAVING shoe LIKE '%Prad
 **String Functions** perform operations on a string and return the value associated with it
 
 **CONCAT** used to add two or more strings together
+```
+SELECT CONCAT(name, " is a type of ", category, " book.") AS book_info FROM books;
+```
 
 **GROUP_CONCAT()** concatenates data from multiple rows into one field
 
+```
+SELECT category, GROUP_CONCAT(name SEPARATOR ", ") AS books
+    FROM books
+    GROUP BY category;
+```
+
+**SUBSTRING()** function will retrieve a substring from a string within a query. 
+```
+SELECT SUBSTRING(published_date, 1, 4) AS published_year FROM books;
++----------------+
+| published_year |
++----------------+
+| 2014           |
+| 2021           |
+| 2016           |
+| 2021           |
+| 2021           |
++----------------+
+```
+
+**LENGTH()** returns the number of characters in a string
+
+**AGGREGATE FUNCTIONS** aggregate the value of multiple rows within one specified criteria of a query. It can combine multiple values in a result. 
+
+**COUNT()** Returns the number of total records within an expression
+
+**SUM()** Returns the sum of all values
+
+**MAX()** Returns the max value
+
+**MIN()** Returns the min value 
 
 
 
