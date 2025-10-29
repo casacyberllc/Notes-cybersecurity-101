@@ -57,6 +57,32 @@ DELETE operation deletes an item from the table
 `DELETE FROM shoes WHERE id = 2`
 
 
+## Clauses
+
+A clause is apart of a statement that specifies criteria of the data being manipulated, usually by an initial statement. Some of these clauses are FROM, WHERE, DISTINCT, GROUP BY, etc. 
+
+**DISTINCT** clause is used to avoid duplicate records when doing a query. 
+
+example: If you try `SELECT * FROM shoes` and there are two stilleto entries, both of these are going to appear on the results. 
+If you only want to know what are the different types of shoes you have without sifting through duplicate entries, you can enter `SELECT DISTINCT shoetype FROM shoes` and it'll give you a list of the different shoe types you have on a table without listing duplicates. 
+
+**GROUP BY** clause aggregates data from multiple records and groups the query results in columns. 
+
+example: `SELECT shoetype, COUNT(*) FROM shoes GROUP BY shoetype`
+This is going to output a list like the following where it's going to list the different shoe types and count how many you have in the table. 
+```
++----------------------------+----------+
+| shoetype                   | COUNT(*) |
++----------------------------+----------+
+| Tennis shoes               |        1 |
+| Heels                      |        1 |
+| Flats                      |        1 |
+| Sandals                    |        1 |
+| Stilletos                  |        2 |
++----------------------------+----------+
+
+```
+
 
 
 
