@@ -80,7 +80,23 @@ This is going to output a list like the following where it's going to list the d
 | Sandals                    |        1 |
 | Stilletos                  |        2 |
 +----------------------------+----------+
+```
 
+**ORDER BY** clause is going to sort data from ascending to descending order. Using functions like ASC or DESC can help accomplish that. 
+
+example: `SELECT * FROM shoes ORDER BY release_date ASC` will return:
+
+```
++----+----------------------------+----------------+--------------------------------------------------------+
+| id | name                       | release_date   | description                                            |
++----+----------------------------+----------------+--------------------------------------------------------+
+|  1 | Prada Stripe Tennis Shoes  | 2014-10-14     | White Leather Prada Tennis Shoes with Pink Stripe      |
+|  3 | Versace Sandals Black      | 2016-02-25     | Versace Leather Black Sandals with Gold Logo           |
+|  5 | Miu Miu Stilletos          | 2021-11-02     | Black MiuMiu Stilletos with Pink Flower                |
+|  6 | Prada Stilletos            | 2021-11-02     |                                                        |
+|  2 | YSL Heels Purple           | 2021-11-16     | YSL strappy heels, shiny purple with YSL logo as heel  |
+|  4 | Christian Loubiton Heels   | 2021-12-21     | Classic Black Christian Loubiton Heels                 |
++----+----------------------------+----------------+--------------------------------------------------------+
 ```
 
 
