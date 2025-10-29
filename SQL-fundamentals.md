@@ -88,7 +88,7 @@ example: `SELECT * FROM shoes ORDER BY release_date ASC` will return:
 
 ```
 +----+----------------------------+----------------+--------------------------------------------------------+
-| id | name                       | release_date   | description                                            |
+| id | shoe                       | release_date   | description                                            |
 +----+----------------------------+----------------+--------------------------------------------------------+
 |  1 | Prada Stripe Tennis Shoes  | 2014-10-14     | White Leather Prada Tennis Shoes with Pink Stripe      |
 |  3 | Versace Sandals Black      | 2016-02-25     | Versace Leather Black Sandals with Gold Logo           |
@@ -98,6 +98,20 @@ example: `SELECT * FROM shoes ORDER BY release_date ASC` will return:
 |  4 | Christian Loubiton Heels   | 2021-12-21     | Classic Black Christian Loubiton Heels                 |
 +----+----------------------------+----------------+--------------------------------------------------------+
 ```
+
+**HAVING** clause is used with other clauses to filter groups or results of records based on a condition. 
+
+example: `SELECT shoe, COUNT(*) FROM shoes GROUP BY shoe HAVING shoe LIKE '%Prada%';
+
+```
++-----------------------+--------------+
+| shoe                      | COUNT(*) |
++-----------------------+--------------+
+| Prada Stripe Tennis Shoes |        1 |
+| Prada Stilletos           |        1 |
++-----------------------+--------------+
+```
+
 
 
 
