@@ -56,6 +56,7 @@ UPDATE operation allows you to update an item
 DELETE operation deletes an item from the table
 `DELETE FROM shoes WHERE id = 2`
 
+<hr />
 
 ## Clauses
 
@@ -111,6 +112,39 @@ example: `SELECT shoe, COUNT(*) FROM shoes GROUP BY shoe HAVING shoe LIKE '%Prad
 | Prada Stilletos           |        1 |
 +-----------------------+--------------+
 ```
+<hr />
+
+## OPERATORS
+
+**Logical Operators** test the truth of a condition and return either TRUE or FALSE
+
+**LIKE** operator is used in conjunction with **WHERE** to filter for specific patterns within a column. 
+`SELECT shoe FROM shoes WHERE shoe LIKE %Stilletos%`
+
+**AND** operator uses multiple conditions to fulfill a requirement
+
+**OR** operator combines multiple possible conditions and returns TRUE if one of these conditions are true.
+
+**NOT** operator reverses the value of a boolean operator and excludes items with a specific condition
+
+**BETWEEN** operator allows you to test a condition if it fits within a defined range. 
+
+**COMPARISON OPERATORS** used to compare specific values to see if they fit a criteria 
+
+**=** is going to check if it has an exact match 
+
+**!=** checks if a value is not equal and returns what doesn't match that
+
+**<** Less than operator
+
+**>** Greater than operator
+
+**<=** less than or equal to
+
+**>=** greater than or equal to
+
+
+
 
 
 
