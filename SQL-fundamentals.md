@@ -143,7 +143,7 @@ example: `SELECT shoe, COUNT(*) FROM shoes GROUP BY shoe HAVING shoe LIKE '%Prad
 
 **>=** greater than or equal to
 
-<br />
+<hr />
 
 ## FUNCTIONS
 
