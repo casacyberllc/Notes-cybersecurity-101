@@ -143,6 +143,18 @@ example: `SELECT shoe, COUNT(*) FROM shoes GROUP BY shoe HAVING shoe LIKE '%Prad
 
 **>=** greater than or equal to
 
+<br />
+
+## FUNCTIONS
+
+**String Functions** perform operations on a string and return the value associated with it
+
+**CONCAT** used to add two or more strings together
+
+**GROUP_CONCAT()** concatenates data from multiple rows into one field
+
+
+
 
 
 
