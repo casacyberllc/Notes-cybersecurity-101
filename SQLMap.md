@@ -40,7 +40,15 @@ You can also use POST-based testing, where the application sends data in the req
 
 `sqlmap -r intercepted_request.txt`
 
+<hr />
 
-  
+## How to get url with get parameters if not explicitly obvious, like login forms
 
+**Step 1** - First we're going to have to inspect the code and look at the form. 
+**Step 2** - Go to the network tab
+**Step 3** - Enter test credentials and check the network tab
+**Step 4** - Make sure you click the 'all' tab on the network tab so you can see everything being sent. 
+<img width="1468" height="420" alt="image" src="https://github.com/user-attachments/assets/5644637f-fa48-4c33-8c13-5545ee30489e" />
+
+**Step 5** - Use the get request url for sqlmap. Make sure to include the url inside single quotes to avoid errors with special characters. 
   
