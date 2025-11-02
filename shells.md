@@ -125,6 +125,18 @@ Short Python Reverse Shell:
 
 ## Web Shells
 
+A web shell is a script written in a language supported by a compromised web server that executes commands through the web server itself. A web shell is usually a file containing the code that executes commands and handles files. It can be hidden within a compromised web application or service, making it difficult to detect and very popular among attackers. Web shells can be written in several languages supported by web servers, like PHP, ASP, JSP, and even simple CGI scripts. 
+
+Existing Webshells Available online:
+
+- [p0wny-shell](https://github.com/flozz/p0wny-shell) - A minimalistic single-file PHP web shell that allows remote command execution. 
+
+- [b374k-shell](https://github.com/b374k/b374k) - A more feature-rich PHP web shell with file management and command execution, among other functionalities.
+
+- [c99 shell](https://www.r57shell.net/single.php?id=13) - A well-known and robust PHP web shell with extensive functionality.
+
+More shells can be found [here](https://www.r57shell.net/index.php)
+
 
 
         
