@@ -34,6 +34,13 @@ Look for URLs that have GET parameters, as they are known to be vulnerable to SQ
 `sqlmap -u http://sqlmaptesting.thmsearch/cat=1 -D users -T mel --dump`
 - Now we want to dump all the data within a table. Let's say you saw a table name was mel. You would add the `-T` flag to select a specific table, and add the flag `--dump` at the end to dump all the data within that table.
 
+<hr />
+
+You can also use POST-based testing, where the application sends data in the request's body instead of the URL. Examples of this could be login forms, registration forms, etc. To follow this approach, you must intercept a POST request on the login or registration page and save it as a text file. You can use the following command to input that request saved in the text file to the SQLMap tool:
+
+`sqlmap -r intercepted_request.txt`
+
+
   
 
   
